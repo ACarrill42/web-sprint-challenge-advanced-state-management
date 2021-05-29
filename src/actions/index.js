@@ -33,10 +33,10 @@ export const addNewSmurf = (Name, Position, Nickname, Summary) => {
   };
 };
 
-export const errorMessage = error => {
+export const errorMessages = Error => {
   return {
     type: SMURF_ERROR,
-    payload: error //possibly work on this
+    payload: {error: Error}
   }
 }
 //Task List:

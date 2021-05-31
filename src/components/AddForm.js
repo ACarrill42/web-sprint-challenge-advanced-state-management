@@ -70,7 +70,7 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {errorMessages, addNewSmurf})(AddForm);
+export default connect(mapStateToProps, {errorMessages, addNewSmurf, initialState})(AddForm);
 
 //Task List:
 //1. Connect the errorMessage, setError and addSmurf actions to the AddForm component.

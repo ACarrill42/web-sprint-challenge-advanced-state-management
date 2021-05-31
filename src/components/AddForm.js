@@ -28,8 +28,8 @@ const AddForm = (props) => {
         } else {
           addNewSmurf(props.name, props.position, props.nickname, props.summary)
         }
-        
     }
+    // console.log(errorMessages())
 
 
     const errorMessage = "";
@@ -70,7 +70,7 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {errorMessages, addNewSmurf, initialState})(AddForm);
+export default connect(mapStateToProps, {errorMessages, addNewSmurf})(AddForm);
 
 //Task List:
 //1. Connect the errorMessage, setError and addSmurf actions to the AddForm component.

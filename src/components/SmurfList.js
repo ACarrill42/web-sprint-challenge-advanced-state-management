@@ -13,7 +13,7 @@ import Smurf from './Smurf';
         description: 'Papa is the practical village leader and the father figure of 100 or so young Smurfs. He is easily identified by his red Smurf hat, pants, and a shortly-trimmed white beard and moustache.'
     }
 
-    if (isLoading) {
+    if (props.isLoading) {
         return <h1>{props.isLoading}</h1>;
     }
 

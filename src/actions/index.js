@@ -33,10 +33,10 @@ export const addNewSmurf = (Name, Position, Nickname, Summary) => {
   };
 };
 
-export const errorMessages = Error => {
+export const errorMessages = error => {
   return {
     type: SMURF_ERROR,
-    payload: {error: Error}
+    payload: {error: "Name, position and nickname fields are required."}
   }
 }
 //Task List:
